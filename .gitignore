@@ -1,0 +1,28 @@
+# User specific & automatically generated files 
+/app/Plugin
+/app/Vendor
+/app/tmp
+/app/Config/development
+/admin/tmp
+/admin/Config/development
+/admin/webroot/files/*
+/user/webroot/files/*
+/user/tmp
+/user/Config/development
+!.gitkeep
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+app
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# IDE and editor specific files 
+/nbproject
+.idea
+*.iml
