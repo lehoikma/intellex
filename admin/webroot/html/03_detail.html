@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!--
+        ===
+        This comment should NOT be removed.
+
+        Charisma v2.0.0
+
+        Copyright 2012-2014 Muhammad Usman
+        Licensed under the Apache License v2.0
+        http://www.apache.org/licenses/LICENSE-2.0
+
+        http://usman.it
+        http://twitter.com/halalit_usman
+        ===
+    -->
+    <meta charset="utf-8">
+    <title>管理画面</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template.">
+    <meta name="author" content="Muhammad Usman">
+
+    <!-- The styles -->
+    <link id="bs-css" href="../css/bootstrap-cerulean.min.css" rel="stylesheet">
+
+    <link href="../css/charisma-app.css" rel="stylesheet">
+    <link href="../bower_components/fullcalendar/dist/fullcalendar.css" rel="stylesheet">
+    <link href="../bower_components/fullcalendar/dist/fullcalendar.print.css" rel="stylesheet" media="print">
+    <link href="../bower_components/chosen/chosen.min.css" rel="stylesheet">
+    <link href="../bower_components/colorbox/example3/colorbox.css" rel="stylesheet">
+    <link href="../bower_components/responsive-tables/responsive-tables.css" rel="stylesheet">
+    <!-- <link href='bower_components/bootstrap-tour/build/css/bootstrap-tour.min.css' rel='stylesheet'> -->
+    <link href="../css/jquery.noty.css" rel="stylesheet">
+    <link href="../css/noty_theme_default.css" rel="stylesheet">
+    <link href="../css/elfinder.min.css" rel="stylesheet">
+    <link href="../css/elfinder.theme.css" rel="stylesheet">
+    <link href="../css/jquery.iphone.toggle.css" rel="stylesheet">
+    <link href="../css/uploadify.css" rel="stylesheet">
+    <link href="../css/animate.min.css" rel="stylesheet">
+    <link href="../custom/css/style.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="../bower_components/jquery/jquery.min.js"></script>
+
+    <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- The fav icon -->
+    <link rel="shortcut icon" href="../img/favicon.ico">
+
+</head>
+
+<body>
+    <!-- topbar starts -->
+    <div class="navbar navbar-default" role="navigation">
+
+        <div class="navbar-inner">
+            <button type="button" class="navbar-toggle pull-left animated flip">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><span><img src="../custom/img/logo.png" alt="MONIPLA"></span></a>
+        </div>
+    </div>
+    <!-- topbar ends -->
+<div class="ch-container">
+    <div class="row">
+
+        <!-- left menu starts -->
+        <div class="col-sm-3 col-lg-3">
+            <div class="sidebar-nav">
+                <div class="nav-canvas">
+                    <div class="nav-sm nav nav-stacked">
+
+                    </div>
+                    <ul class="nav nav-pills nav-stacked main-menu">
+                        <li class="nav-header">区切りたいときはこれを使って</li>
+                        <li><a href="#"><i class="glyphicon glyphicon-align-justify"></i><span> アカウント管理</span></a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-align-justify"></i><span> キャンペーン管理</span></a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-align-justify"></i><span> ユーザ管理</span></a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-align-justify"></i><span> プラットフォームユーザ管理</span></a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-align-justify"></i><span> プラットフォームキャンペーン管理</span></a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-align-justify"></i><span> プラットフォームバナー管理</span></a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-align-justify"></i><span> FBトップバナー管理</span></a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-align-justify"></i><span> 投稿管理</span></a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-align-justify"></i><span> デイリーレポート管理</span></a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-align-justify"></i><span> ユーザーからのお問い合わせ</span></a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-align-justify"></i><span> クライアントからのお問い合わせ</span></a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-align-justify"></i><span> クライアントへのお問い合わせチェック</span></a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-align-justify"></i><span> クライアントへのお知らせ管理</span></a></li>
+                        <li class="nav-header">KPIについて</li>
+                        <li><a href="#"><i class="glyphicon glyphicon-align-justify"></i><span> KPI(メディア)</span></a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-align-justify"></i><span> KPI(mixi)</span></a></li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--/span-->
+        <!-- left menu ends -->
+
+        <noscript>
+            <div class="alert alert-block col-md-12">
+                <h4 class="alert-heading">Warning!</h4>
+
+                <p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
+                    enabled to use this site.</p>
+            </div>
+        </noscript>
+
+        <div id="content" class="col-lg-9 col-sm-9">
+        <!-- ここからコンテンツを入れてください -->
+            <div class="page-header">
+                <h1>入力フォーム</h1>
+            </div>
+
+            <div class="row">
+                <div class="box col-md-12">
+                    <div class="box-inner">
+                        <div class="box-header well" data-original-title="">
+                            <h2><i class="glyphicon glyphicon-edit"></i> 入力項目</h2>
+
+                            <div class="box-icon">
+                                <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                                        class="glyphicon glyphicon-chevron-up"></i></a>
+                            </div>
+                        </div>
+                        <div class="box-content">
+                            <div class="alert alert-danger">
+                                <button type="button" class="close" data-dismiss="alert">×</button>
+                                <strong>エラー表現</strong> エラーのテキストテキストテキストテキストテキストテキストテキスト
+                            </div>
+                            <div class="alert alert-success">
+                                <button type="button" class="close" data-dismiss="alert">×</button>
+                                <strong>サクセス表現</strong> サクセスのテキストテキストテキストテキストテキストテキストテキスト
+                            </div>
+
+                            <div class="alert alert-info">
+                                注意事項をココに入れる
+                            </div>
+                            <form class="form-horizontal fromSerach" name="fromSerach">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3" for="item01">ラベル</label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" id="item01" placeholder="プレスーホルダーはいるよ">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">ラベル</label>
+                                    <div class="col-sm-8 form-inline">
+                                        <input type="date" class="form-control" id="item02" placeholder="プレスーホルダー">
+                                        〜
+                                        <input type="date" class="form-control" id="item03" placeholder="プレスーホルダー">
+                                    </div>
+                                </div>
+                                <div class="form-group has-error">
+                                    <label class="control-label col-md-3" for="inputError1">ラベル <span class="label-default label label-danger">必須</span></label>
+                                    <div class="col-md-8">
+                                        <span class="control-label">エラー内容</span>
+                                        <textarea class="form-control" rows="3" placeholder="プレスーホルダーはいるよ" id="inputError1"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">チェックリスト</label>
+                                    <div class="col-xs-9">
+                                        <label class="checkbox-inline"><input type="checkbox" name="">オプション１</label>
+                                        <label class="checkbox-inline"><input type="checkbox" name="">オプション２</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">チェックリスト</label>
+                                    <div class="col-xs-9">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">
+                                                テキストテキストテキストテキストテキストテキスト
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">
+                                                テキストテキストテキストテキストテキストテキスト
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">ラジオボタン</label>
+                                    <div class="col-xs-9">
+                                        <div class="radio">
+                                            <label><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">テキストテキストテキストテキストテキストテキストテキストテキスト</label>
+                                        </div>
+                                        <div class="radio">
+                                            <label><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">テキストテキストテキストテキストテキストテキストテキストテキスト</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">ラジオボタン</label>
+                                    <div class="col-xs-9">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="control-group">
+                                        <label class="control-label col-md-3" for="select1">Multiple Select / Tags</label>
+                                        <div class="col-xs-8">
+                                            <div class="controls multiple-inline">
+                                                <select id="select1" multiple class="form-control" data-rel="chosen">
+                                                    <option>アンケート</option>
+                                                    <option>プレゼント</option>
+                                                    <option>スピードくじ</option>
+                                                    <option>食品</option>
+                                                    <option>飲料</option>
+                                                    <option>大量当選</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="control-group">
+                                        <label class="control-label col-md-3" for="selectError2">キャンペーン選択</label>
+
+                                        <div class="controls col-xs-8 serch-inline">
+                                            <select data-placeholder="キャンペーンを選択してください" id="selectError2" data-rel="chosen" class="custom-chosen select-size8">
+                                                <option value=""></option>
+                                                <optgroup label="NFC EAST">
+                                                    <option value="38483">父の日プレゼント♪ラーメン＆鍋焼うどん</option>
+                                                    <option value="38641">1日１回チャレンジ！その場で当たる!!夏バテ対策にもぴったり、スピード栄養チャージ『コンブチャワンダードリンク』プレゼント!</option>
+                                                    <option value="38638">”さよなら、シネマート六本木”　 あなたとシネマート六本木の思い出を投稿しよう！</option>
+                                                    <option value="38637">10名様にリーデル ワイングラスプレゼント！</option>
+                                                </optgroup>
+                                                <optgroup label="NFC NORTH">
+                                                    <option value="38633">スマホやタブレットを最大１０台まで同時充電可能！USB充電器</option>
+                                                    <option value="38632">ワーナーミュージック・ジャパン×HUB合同企画 『エリック・クラプトン・キャンペーン』</option>
+                                                    <option value="38629">スポーツ、ゴルフ、旅行などに！実感サプリメント！「還元型コエンザイムQ10　Energy Stick(エナジースティック)」1箱10本入りを10名様に！</option>
+                                                    <option value="38627">【3周年なので33名！】米肌3周年ありがとうキャンペーン♪</option>
+                                                </optgroup>
+                                                <optgroup label="NFC SOUTH">
+                                                    <option value="38625">あなたもモテ爪に！男も女も第一印象は指先から★ネイルケアセット10名様にプレゼント</option>
+                                                    <option value="10">apple watch</option>
+                                                    <option value="11">bear and choose</option>
+                                                    <option value="12">food bear</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+<!--                                 <div class="form-group">
+                                    <label class="control-label col-md-3" for="selectError2">キャンペーン選択</label>
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-addon">title</div>
+                                                <input type="text" class="form-control" placeholder="Amount" name="inputcpname" value="">
+                                                <div class="input-group-addon btn btn-primary" style="color: #fff;" onclick="window.open('register_project.html','sub','width=785,height=640');return false;"><i class="glyphicon glyphicon-search"></i> キャンペーンを検索する</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-addon" style="width:48px;">id</div>
+                                                <input type="text" class="form-control" placeholder="Amount" name="inputcpid" value="">
+                                                <div class="input-group-addon btn btn-primary" style="color: #fff;" onclick="window.open('register_project.html','sub','width=785,height=640');return false;"><i class="glyphicon glyphicon-search"></i> キャンペーンを検索する</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+
+
+
+
+
+
+                                <div class="form-group">
+                                    <label class="control-label col-md-3" for="item01">キャンペーン選択</label>
+                                    <div class="col-md-8">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">title</div>
+                                            <input type="text" class="form-control" placeholder="キャンペーンを探せます" name="inputcpname" value="">
+                                            <div class="input-group-addon btn btn-primary" style="color: #fff;" onclick="window.open('04_modal.html','sub','width=785,height=640');return false;"><i class="glyphicon glyphicon-search"></i> キャンペーンを検索する</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-8 col-md-offset-3">
+                                        <div class="input-group">
+                                            <div class="input-group-addon" style="width:48px;">id</div>
+                                            <input type="text" class="form-control" placeholder="キャンペーンを探せます" name="inputcpid" val="">
+                                            <div class="input-group-addon btn btn-primary" style="color: #fff;" onclick="window.open('04_modal.html','sub','width=785,height=640');return false;"><i class="glyphicon glyphicon-search"></i> キャンペーンを検索する</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="form-group">
+                                    <label class="control-label col-md-3" for="exampleInputFile">ファイルアップロード</label>
+                                    <div class="col-md-9">
+                                        <div class="img-input file-inline">
+                                            <img src="../custom/img/noimage.png" alt="" class="img-view">
+                                            <input type="file" class="file-inline" id="exampleInputFile">
+                                        </div>
+                                        <p class="help-block">注目：横246 px 縦162px ／ 超注目：横744 px 縦190pxの画像をアップロードして下さい</p>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary noty"
+                                        data-noty-options="{&quot;text&quot;:&quot;テキストはここにいれればおｋ&quot;,&quot;layout&quot;:&quot;top&quot;,&quot;type&quot;:&quot;error&quot;}">
+                                    <i class="glyphicon glyphicon-bell icon-white"></i> エラー表現
+                                </button>
+                                <button class="btn btn-primary noty"
+                                        data-noty-options="{&quot;text&quot;:&quot;テキストはここにいれればおｋ&quot;,&quot;layout&quot;:&quot;top&quot;,&quot;type&quot;:&quot;success&quot;}">
+                                    <i class="glyphicon glyphicon-bell icon-white"></i> サクセス表現
+                                </button>
+                                <hr>
+                                <p class="text-center"><button class="btn btn-default btn-lg"><i class="glyphicon glyphicon-refresh"></i> 更新</button></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--/span-->
+            </div><!--/row-->
+        <!-- ココでコンテンツは終わりです -->
+        </div><!--/#content.col-md-0-->
+</div><!--/fluid-row-->
+
+    <hr>
+
+    <footer class="row">
+        <p class="col-md-9 col-md-9 col-xs-12 copyright">Copyright © 2011-2015 Allied Architects, Inc. All Rights Reserved.</p>
+    </footer>
+
+</div><!--/.fluid-container-->
+
+<!-- external javascript -->
+
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- library for cookie management -->
+<script src="../js/jquery.cookie.js"></script>
+<!-- calender plugin -->
+<script src="../bower_components/moment/min/moment.min.js"></script>
+<script src="../bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+<!-- data table plugin -->
+<script src="../js/jquery.dataTables.min.js"></script>
+
+<!-- select or dropdown enhancer -->
+<script src="../custom/js/chosen.jquery.js"></script>
+<script>
+$(function(){
+    $('.custom-chosen').chosen({
+        search_contains:true // 途中選択
+    });
+});
+</script>
+<!-- file type preview -->
+<script src="../custom/js/file.preview.js"></script>
+
+<!-- plugin for gallery image view -->
+<script src="../bower_components/colorbox/jquery.colorbox-min.js"></script>
+<!-- notification plugin -->
+<script src="../js/jquery.noty.js"></script>
+<!-- library for making tables responsive -->
+<script src="../bower_components/responsive-tables/responsive-tables.js"></script>
+<!-- tour plugin -->
+<script src="../bower_components/bootstrap-tour/build/js/bootstrap-tour.min.js"></script>
+<!-- star rating plugin -->
+<script src="../js/jquery.raty.min.js"></script>
+<!-- for iOS style toggle switch -->
+<script src="../js/jquery.iphone.toggle.js"></script>
+<!-- autogrowing textarea plugin -->
+<script src="../js/jquery.autogrow-textarea.js"></script>
+<!-- multiple file upload plugin -->
+<script src="../js/jquery.uploadify-3.1.min.js"></script>
+<!-- history.js for cross-browser state change on ajax -->
+<script src="../js/jquery.history.js"></script>
+<!-- application script for Charisma demo -->
+<script src="../js/charisma.js"></script>
+</body>
+</html>
